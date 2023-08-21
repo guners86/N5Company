@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="7.0.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.7.1" />
@@ -16,11 +17,10 @@
 
   <ItemGroup>
     <Folder Include="DataTransferObjects\" />
-    <Folder Include="Features\" />
+    <Folder Include="Features\Permissions\Commands\UpdatePermissionsCommand\" />
+    <Folder Include="Features\Permissions\Queries\GetAllPermissionsQuery\" />
     <Folder Include="Filters\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Wrappers\" />
   </ItemGroup>
 
 </Project>
