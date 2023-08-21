@@ -1,4 +1,5 @@
 using N5Company.Core.Application;
+using N5Company.Infrastucture.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ builder.Services.AddSwaggerGen();
 
 // Add services of Core
 builder.Services.AddApplicationLayer();
+
+// Add services of Persistence
+builder.Services.AddServiceInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

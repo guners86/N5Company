@@ -9,6 +9,10 @@
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
@@ -18,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\N5Company.Core.Application\N5Company.Core.Application.csproj" />
+    <ProjectReference Include="..\N5Company.Infrastucture.Persistence\N5Company.Infrastucture.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
