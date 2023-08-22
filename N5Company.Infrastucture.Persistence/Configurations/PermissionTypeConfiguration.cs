@@ -11,9 +11,6 @@ namespace N5Company.Infrastucture.Persistence.Configurations
             builder.ToTable(nameof(PermissionTypes));
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Description).IsRequired();
-            builder.HasMany(x => x.Permissions)
-                .WithOne(x => x.PermissionTypes)
-                .HasForeignKey(x => x.PermissionTypeId);
         }
     }
 }

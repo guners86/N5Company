@@ -7,6 +7,6 @@
         public string EmpolyeLastname { get; set; } = string.Empty;
         public int PermissionTypeId { get; set; }
         public DateTime PermissionDate { get; set; }
-        public PermissionTypes PermissionTypes { get; set; } = new PermissionTypes();
+        public PermissionTypes PermissionTypes { get; set; }
     }
 }

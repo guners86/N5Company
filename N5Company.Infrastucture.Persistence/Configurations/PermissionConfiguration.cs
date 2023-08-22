@@ -14,6 +14,10 @@ namespace N5Company.Infrastucture.Persistence.Configurations
             builder.Property(x => x.EmpolyeLastname).IsRequired();
             builder.Property(x => x.PermissionTypeId).IsRequired();
             builder.Property(x => x.PermissionDate).IsRequired();
+
+            builder.HasOne(x => x.PermissionTypes)
+                .WithMany(x => x.Permissions)
+                .HasForeignKey(x => x.PermissionTypeId);
         }
     }
 }

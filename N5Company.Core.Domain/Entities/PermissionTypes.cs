@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public string Description { get; set; } = string.Empty;
-        public List<Permissions> Permissions { get; set; } = new List<Permissions>();
+        public List<Permissions> Permissions { get; set; }
     }
 }

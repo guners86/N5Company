@@ -12,8 +12,8 @@ using N5Company.Infrastucture.Persistence.Context;
 namespace N5Company.Infrastucture.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230822021850_InitialData")]
-    partial class InitialData
+    [Migration("20230822043054_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
