@@ -12,7 +12,7 @@ namespace N5Company.Infrastucture.Persistence.Configurations
             builder.HasKey(x => x.Id);
             builder.Property(x => x.EmployeName).IsRequired();
             builder.Property(x => x.EmpolyeLastname).IsRequired();
-            builder.Property(x => x.PermissionType).IsRequired();
+            builder.Property(x => x.PermissionTypeId).IsRequired();
             builder.Property(x => x.PermissionDate).IsRequired();
         }
     }

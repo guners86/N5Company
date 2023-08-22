@@ -5,7 +5,8 @@
         public int Id { get; set; }
         public string EmployeName { get; set; } = string.Empty;
         public string EmpolyeLastname { get; set; } = string.Empty;
-        public int PermissionType { get; set; }
+        public int PermissionTypeId { get; set; }
         public DateTime PermissionDate { get; set; }
+        public PermissionTypes PermissionTypes { get; set; } = new PermissionTypes();
     }
 }
