@@ -17,6 +17,16 @@ namespace N5Company.Infrastucture.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            modelBuilder.Entity<PermissionTypes>().HasData(new PermissionTypes 
+            {
+                Id = 1,
+                Description = "Doctor",
+            }, new PermissionTypes 
+            {
+                Id = 2,
+                Description = "Free Day"
+            });
         }
     }
 }
