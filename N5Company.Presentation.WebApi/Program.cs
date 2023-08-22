@@ -1,5 +1,6 @@
 using N5Company.Core.Application;
 using N5Company.Infrastucture.Persistence;
+using N5Company.Presentation.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+// Add Middleware to intercept exceptions
+app.UseErrorHandlingMiddleware();
 
 app.MapControllers();
 
