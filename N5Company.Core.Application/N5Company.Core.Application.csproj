@@ -16,10 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataTransferObjects\" />
-    <Folder Include="Features\Permissions\Commands\UpdatePermissionsCommand\" />
-    <Folder Include="Features\Permissions\Queries\GetAllPermissionsQuery\" />
     <Folder Include="Filters\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
