@@ -20,7 +20,10 @@
     <Folder Include="Features\Permissions\Commands\UpdatePermissionsCommand\" />
     <Folder Include="Features\Permissions\Queries\GetAllPermissionsQuery\" />
     <Folder Include="Filters\" />
-    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\N5Company.Core.Domain\N5Company.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

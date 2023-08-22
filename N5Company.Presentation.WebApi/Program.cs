@@ -17,6 +17,9 @@ builder.Services.AddApplicationLayer();
 // Add services of Persistence
 builder.Services.AddServiceInfrastructure(builder.Configuration);
 
+// Add services of Api Versions
+builder.Services.AddApiVersioningExtension();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
